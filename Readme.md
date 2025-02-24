@@ -1,0 +1,1 @@
+Build uv with `cargo zigbuild --profile profiling --target aarch64-unknown-linux-gnu` and copy it to `uv-aarch64`. It works with a regular uv too, but that doesn't have debug symbols. Use `run.sh` to reproduce or `debug.sh` to start a gdbserver.

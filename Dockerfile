@@ -2,12 +2,7 @@ FROM ubuntu:24.04 AS builder
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN <<EOT
-apt-get update -qy
-apt-get install -qyy \
-    python3 \
-    python3-setuptools
-EOT
+RUN apt-get update -qy && apt-get install -qyy python3  python3-setuptools
 
 RUN apt install -qyy gdbserver
 
